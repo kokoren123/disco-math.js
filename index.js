@@ -13,9 +13,9 @@ var add = function (num1, num2, msg) {
     return msg.channel.send(embed6);
 };
 module.exports.add = add;
-var multiplie = function (num11, num22, msg) {
+var multiply = function (num11, num22, msg) {
     if (!num11 || !num22 || !msg) {
-        var error = "missing argument: \n example: \n .multiplie(5, 6, message) \n will sent in the channel of the message an embed with the number 30";
+        var error = "missing argument: \n example: \n .multiply(5, 6, message) \n will sent in the channel of the message an embed with the number 30";
         throw new Error(error);
     }
     var embed6 = new Discord.MessageEmbed()
@@ -24,7 +24,7 @@ var multiplie = function (num11, num22, msg) {
         .setColor("0076FF");
     return msg.channel.send(embed6);
 };
-module.exports.multiplie = multiplie;
+module.exports.multiplie = multiply;
 var divide = function (num111, num222, msg2) {
     if (!num111 || !num222 || !msg2) {
         var error = "missing argument: \n example: \n .divide(10, 2, message) \n will sent in the channel of the message an embed with the number 5";

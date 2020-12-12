@@ -1,13 +1,13 @@
 # Installation
 
 ```
-npm install discord-math.ts
+npm install disco-math.js
 ```
 
 ## Add
 
 ```js
-const discordMath = require("discord-math.ts");
+const discordMath = require("disco-math.js");
 const Discord = require('discord.js');
 const client = new Discord.Client();
 

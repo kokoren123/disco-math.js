@@ -1,5 +1,5 @@
 git add *
 
-git commit -m "commit"
+git commit -m "x.x.x version"
 
 git push -u origin main

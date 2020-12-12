@@ -1,4 +1,5 @@
 import * as Discord from 'discord.js';
+
 const add = (num1, num2, msg) => {
 
     if (!num1 || !num2 || !msg) {
@@ -17,11 +18,10 @@ module.exports.add = add
 
 
 
-
-const multiplie = (num11, num22, msg) => {
+const multiply = (num11, num22, msg) => {
 
     if (!num11 || !num22 || !msg) {
-        let error = "missing argument: \n example: \n .multiplie(5, 6, message) \n will sent in the channel of the message an embed with the number 30";
+        let error = "missing argument: \n example: \n .multiply(5, 6, message) \n will sent in the channel of the message an embed with the number 30";
         throw new Error(error)
     }
 
@@ -32,7 +32,7 @@ const multiplie = (num11, num22, msg) => {
     return msg.channel.send(embed6)
 }
 
-module.exports.multiplie = multiplie
+module.exports.multiplie = multiply;
 
 const divide = (num111, num222, msg2) => {
     if (!num111 || !num222 || !msg2) {
