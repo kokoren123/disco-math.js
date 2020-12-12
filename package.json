@@ -17,10 +17,9 @@
     "url": "https://github.com/kokoren123/discord-math.ts/issues"
   },
   "homepage": "https://github.com/kokoren123/discord-math.ts#readme",
-  "dependencies": {
-    "discord.js": "^12.5.1"
-  },
+  "dependencies": {},
   "devDependencies": {
-    "@types/node": "^14.14.12"
+    "@types/node": "^14.14.12",
+    "discord.js": "^12.5.1"
   }
 }
