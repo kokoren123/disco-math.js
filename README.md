@@ -15,11 +15,30 @@ const client = new Discord.Client();
 client.on('message', message => {
     const prefix = "!";
     const args = message.content.slice(prefix.length).trim().split(' ');
-    if (message.content.startsWith("!add")) {
+    if (message.content.startsWith(`${prefix}add`)) {
         discordMath.add(args[1], args[2], message)
     }
 })
 
 client.login("SuperSecretToken")
 
+```
+
+## Sub
+
+```js
+const discordMath = require("disco-math.js");
+const Discord = require('discord.js');
+const client = new Discord.Client();
+
+
+client.on('message', message => {
+    const prefix = "!";
+    const args = message.content.slice(prefix.length).trim().split(' ');
+    if (message.content.startsWith(`${prefix}Sub`)) {
+        discordMath.sub(args[1], args[2], message)
+    }
+})
+
+client.login("SuperSecretToken")
 ```
