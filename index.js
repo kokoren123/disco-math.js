@@ -13,6 +13,18 @@ var add = function (num1, num2, msg) {
     return msg.channel.send(embed6);
 };
 module.exports.add = add;
+var sub = function (num1, num2, msg) {
+    if (!num1 || !num2 || !msg) {
+        var error = "missing argument: \n example: \n .sub(5, 6, message) \n will sent in the channel of the message an embed with the number 11";
+        throw new Error(error);
+    }
+    var embed6 = new Discord.MessageEmbed()
+        .setTitle(num1 + " - " + num2 + " \uD83E\uDD14")
+        .setDescription("I know! The answer is: " + (+num1 - +num2))
+        .setColor("0076FF");
+    return msg.channel.send(embed6);
+};
+module.exports.sub = sub;
 var multiply = function (num11, num22, msg) {
     if (!num11 || !num22 || !msg) {
         var error = "missing argument: \n example: \n .multiply(5, 6, message) \n will sent in the channel of the message an embed with the number 30";

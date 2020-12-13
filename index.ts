@@ -14,9 +14,23 @@ const add = (num1, num2, msg) => {
     return msg.channel.send(embed6)
 }
 
-module.exports.add = add
+module.exports.add = add;
 
+const sub = (num1, num2, msg) => {
 
+    if (!num1 || !num2 || !msg) {
+        let error = "missing argument: \n example: \n .sub(5, 6, message) \n will sent in the channel of the message an embed with the number 11";
+        throw new Error(error)
+    }
+
+    let embed6 = new Discord.MessageEmbed()
+        .setTitle(`${num1} - ${num2} 🤔`)
+        .setDescription(`I know! The answer is: ${+num1 - +num2}`)
+        .setColor("0076FF")
+    return msg.channel.send(embed6)
+}
+
+module.exports.sub = sub;
 
 const multiply = (num11, num22, msg) => {
 
