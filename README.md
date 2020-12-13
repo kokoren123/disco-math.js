@@ -5,8 +5,6 @@ npm install disco-math.js
 ```
 In the console/terminal.
 
-# Usage
-
 ## Add
 
 ```js

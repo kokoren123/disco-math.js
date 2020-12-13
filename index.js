@@ -7,7 +7,7 @@ var add = function (num1, num2, msg) {
         throw new Error(err);
     }
     if (!num1 || !num2 || !msg) {
-        var error = "Missing argument: \n Example: \n .add(5, 6, message) \n will sent in the channel of the message an embed with the number 11";
+        var error = "Missing argument: \n Example: \n .add(5, 6, message) \n Will sent in the channel of the message an embed with the number 11";
         throw new Error(error);
     }
     var embed6 = new Discord.MessageEmbed()
@@ -24,7 +24,7 @@ var sub = function (num12, num21, msg) {
         throw new Error(err);
     }
     if (!num12 || !num21 || !msg) {
-        var error = "Missing argument: \n Example: \n .sub(7, 5, message) \n will sent in the channel of the message an embed with the number 2";
+        var error = "Missing argument: \n Example: \n .sub(7, 5, message) \n Will sent in the channel of the message an embed with the number 2";
         throw new Error(error);
     }
     var embed6 = new Discord.MessageEmbed()
@@ -41,7 +41,7 @@ var multiply = function (num11, num22, msg) {
         throw new Error(err);
     }
     if (!num11 || !num22 || !msg) {
-        var error = "Missing argument: \n Example: \n .multiply(5, 6, message) \n will sent in the channel of the message an embed with the number 30";
+        var error = "Missing argument: \n Example: \n .multiply(5, 6, message) \n Will sent in the channel of the message an embed with the number 30";
         throw new Error(error);
     }
     var embed6 = new Discord.MessageEmbed()
@@ -59,7 +59,7 @@ var divide = function (num111, num222, msg2) {
         throw new Error(err);
     }
     if (!num111 || !num222 || !msg2) {
-        var error = "missing argument: \n example: \n .divide(10, 2, message) \n will sent in the channel of the message an embed with the number 5";
+        var error = "missing argument: \n example: \n .divide(10, 2, message) \n Will sent in the channel of the message an embed with the number 5";
         throw new Error(error);
     }
     var embed7 = new Discord.MessageEmbed()
