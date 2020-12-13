@@ -13,14 +13,14 @@ var add = function (num1, num2, msg) {
     return msg.channel.send(embed6);
 };
 module.exports.add = add;
-var sub = function (num1, num2, msg) {
-    if (!num1 || !num2 || !msg) {
+var sub = function (num12, num21, msg) {
+    if (!num12 || !num21 || !msg) {
         var error = "missing argument: \n example: \n .sub(7, 5, message) \n will sent in the channel of the message an embed with the number 2";
         throw new Error(error);
     }
     var embed6 = new Discord.MessageEmbed()
-        .setTitle(num1 + " - " + num2 + " \uD83E\uDD14")
-        .setDescription("I know! The answer is: " + (+num1 - +num2))
+        .setTitle(num12 + " - " + num21 + " \uD83E\uDD14")
+        .setDescription("I know! The answer is: " + (+num12 - +num21))
         .setColor("0076FF");
     return msg.channel.send(embed6);
 };
