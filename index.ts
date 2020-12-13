@@ -1,4 +1,5 @@
 import * as Discord from 'discord.js';
+import { mkdir } from 'fs';
 
 const add = (num1: number, num2: number, msg) => {
     if (typeof num1 !== 'number' || typeof num2 !== 'number') {
@@ -20,6 +21,9 @@ const add = (num1: number, num2: number, msg) => {
 
 module.exports.add = add;
 
+
+module.exports.addition = add;
+
 const sub = (num12: number, num21: number, msg) => {
     if (typeof num12 !== 'number' || typeof num21 !== 'number') {
         let err = "Incorrect input!";
@@ -39,6 +43,8 @@ const sub = (num12: number, num21: number, msg) => {
 }
 
 module.exports.sub = sub;
+
+module.exports.subtraction = sub;
 
 const multiply = (num11: number, num22: number, msg) => {
     if (typeof num11 !== 'number' || typeof num22 !== 'number') {
@@ -60,6 +66,10 @@ const multiply = (num11: number, num22: number, msg) => {
 
 module.exports.multiplie = multiply;
 
+module.exports.multiplication = multiply;
+
+module.exports.multiply = multiply;
+
 const divide = (num111: number, num222: number, msg2) => {
     if (typeof num111 !== 'number' || typeof num222 !== 'number') {
         let err = "Incorrect input!";
@@ -79,3 +89,5 @@ const divide = (num111: number, num222: number, msg2) => {
 }
 
 module.exports.divide = divide;
+
+module.exports.division = divide;

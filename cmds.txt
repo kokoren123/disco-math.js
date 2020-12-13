@@ -1,7 +1,0 @@
-git add *
-
-
-git commit -m "version x.x.x"
-
-
-git push -u origin main

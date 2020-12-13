@@ -17,6 +17,7 @@ var add = function (num1, num2, msg) {
     return msg.channel.send(embed6);
 };
 module.exports.add = add;
+module.exports.addition = add;
 var sub = function (num12, num21, msg) {
     if (typeof num12 !== 'number' || typeof num21 !== 'number') {
         var err = "Incorrect input!";
@@ -33,6 +34,7 @@ var sub = function (num12, num21, msg) {
     return msg.channel.send(embed6);
 };
 module.exports.sub = sub;
+module.exports.subtraction = sub;
 var multiply = function (num11, num22, msg) {
     if (typeof num11 !== 'number' || typeof num22 !== 'number') {
         var err = "Incorrect input!";
@@ -49,6 +51,8 @@ var multiply = function (num11, num22, msg) {
     return msg.channel.send(embed6);
 };
 module.exports.multiplie = multiply;
+module.exports.multiplication = multiply;
+module.exports.multiply = multiply;
 var divide = function (num111, num222, msg2) {
     if (typeof num111 !== 'number' || typeof num222 !== 'number') {
         var err = "Incorrect input!";
@@ -65,3 +69,4 @@ var divide = function (num111, num222, msg2) {
     return msg2.channel.send(embed7);
 };
 module.exports.divide = divide;
+module.exports.division = divide;
