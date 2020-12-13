@@ -1,6 +1,10 @@
 import * as Discord from 'discord.js';
 
 const add = (num1: number, num2: number, msg) => {
+    if (typeof num1 !== 'number' || typeof num2 !== 'number') {
+        let err = "Incorrect input!";
+        throw new Error(err);
+    }
 
     if (!num1 || !num2 || !msg) {
         let error = "missing argument: \n example: \n .add(5, 6, message) \n will sent in the channel of the message an embed with the number 11";
@@ -17,6 +21,10 @@ const add = (num1: number, num2: number, msg) => {
 module.exports.add = add;
 
 const sub = (num12: number, num21: number, msg) => {
+    if (typeof num12 !== 'number' || typeof num21 !== 'number') {
+        let err = "Incorrect input!";
+        throw new Error(err);
+    }
 
     if (!num12 || !num21 || !msg) {
         let error = "missing argument: \n example: \n .sub(7, 5, message) \n will sent in the channel of the message an embed with the number 2";
@@ -33,6 +41,10 @@ const sub = (num12: number, num21: number, msg) => {
 module.exports.sub = sub;
 
 const multiply = (num11: number, num22: number, msg) => {
+    if (typeof num11 !== 'number' || typeof num22 !== 'number') {
+        let err = "Incorrect input!";
+        throw new Error(err);
+    }
 
     if (!num11 || !num22 || !msg) {
         let error = "missing argument: \n example: \n .multiply(5, 6, message) \n will sent in the channel of the message an embed with the number 30";
@@ -49,6 +61,11 @@ const multiply = (num11: number, num22: number, msg) => {
 module.exports.multiplie = multiply;
 
 const divide = (num111: number, num222: number, msg2) => {
+    if (typeof num111 !== 'number' || typeof num222 !== 'number') {
+        let err = "Incorrect input!";
+        throw new Error(err);
+    }
+
     if (!num111 || !num222 || !msg2) {
         let error = "missing argument: \n example: \n .divide(10, 2, message) \n will sent in the channel of the message an embed with the number 5";
         throw new Error(error);

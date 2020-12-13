@@ -2,6 +2,10 @@
 exports.__esModule = true;
 var Discord = require("discord.js");
 var add = function (num1, num2, msg) {
+    if (typeof num1 !== 'number' || typeof num2 !== 'number') {
+        var err = "Incorrect input!";
+        throw new Error(err);
+    }
     if (!num1 || !num2 || !msg) {
         var error = "missing argument: \n example: \n .add(5, 6, message) \n will sent in the channel of the message an embed with the number 11";
         throw new Error(error);
@@ -14,6 +18,10 @@ var add = function (num1, num2, msg) {
 };
 module.exports.add = add;
 var sub = function (num12, num21, msg) {
+    if (typeof num12 !== 'number' || typeof num21 !== 'number') {
+        var err = "Incorrect input!";
+        throw new Error(err);
+    }
     if (!num12 || !num21 || !msg) {
         var error = "missing argument: \n example: \n .sub(7, 5, message) \n will sent in the channel of the message an embed with the number 2";
         throw new Error(error);
@@ -26,6 +34,10 @@ var sub = function (num12, num21, msg) {
 };
 module.exports.sub = sub;
 var multiply = function (num11, num22, msg) {
+    if (typeof num11 !== 'number' || typeof num22 !== 'number') {
+        var err = "Incorrect input!";
+        throw new Error(err);
+    }
     if (!num11 || !num22 || !msg) {
         var error = "missing argument: \n example: \n .multiply(5, 6, message) \n will sent in the channel of the message an embed with the number 30";
         throw new Error(error);
@@ -38,6 +50,10 @@ var multiply = function (num11, num22, msg) {
 };
 module.exports.multiplie = multiply;
 var divide = function (num111, num222, msg2) {
+    if (typeof num111 !== 'number' || typeof num222 !== 'number') {
+        var err = "Incorrect input!";
+        throw new Error(err);
+    }
     if (!num111 || !num222 || !msg2) {
         var error = "missing argument: \n example: \n .divide(10, 2, message) \n will sent in the channel of the message an embed with the number 5";
         throw new Error(error);
