@@ -7,7 +7,7 @@ const add = (num1: number, num2: number, msg) => {
     }
 
     if (!num1 || !num2 || !msg) {
-        let error = "missing argument: \n example: \n .add(5, 6, message) \n will sent in the channel of the message an embed with the number 11";
+        let error = "Missing argument: \n Example: \n .add(5, 6, message) \n will sent in the channel of the message an embed with the number 11";
         throw new Error(error);
     }
 
@@ -27,7 +27,7 @@ const sub = (num12: number, num21: number, msg) => {
     }
 
     if (!num12 || !num21 || !msg) {
-        let error = "missing argument: \n example: \n .sub(7, 5, message) \n will sent in the channel of the message an embed with the number 2";
+        let error = "Missing argument: \n Example: \n .sub(7, 5, message) \n will sent in the channel of the message an embed with the number 2";
         throw new Error(error);
     }
 
@@ -47,7 +47,7 @@ const multiply = (num11: number, num22: number, msg) => {
     }
 
     if (!num11 || !num22 || !msg) {
-        let error = "missing argument: \n example: \n .multiply(5, 6, message) \n will sent in the channel of the message an embed with the number 30";
+        let error = "Missing argument: \n Example: \n .multiply(5, 6, message) \n will sent in the channel of the message an embed with the number 30";
         throw new Error(error);
     }
 
