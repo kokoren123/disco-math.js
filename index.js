@@ -15,7 +15,7 @@ var add = function (num1, num2, msg) {
 module.exports.add = add;
 var sub = function (num1, num2, msg) {
     if (!num1 || !num2 || !msg) {
-        var error = "missing argument: \n example: \n .sub(5, 6, message) \n will sent in the channel of the message an embed with the number 11";
+        var error = "missing argument: \n example: \n .sub(7, 5, message) \n will sent in the channel of the message an embed with the number 2";
         throw new Error(error);
     }
     var embed6 = new Discord.MessageEmbed()
